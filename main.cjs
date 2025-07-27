@@ -57,7 +57,11 @@ ipcMain.handle('set-tasks', async (event, tasks) => {
   return true;
 });
 
+const { autoUpdater } = require('electron-updater');
+
 app.whenReady().then(() => {
+  // Verifica atualizações e notifica automaticamente
+  autoUpdater.checkForUpdatesAndNotify();
   createWindow();
 
   const { globalShortcut } = require('electron');

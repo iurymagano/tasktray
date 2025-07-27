@@ -1,7 +1,7 @@
 {
   "main": "main.cjs",
   "type": "module",
-  "name": "my-projectcd",
+  "name": "tasktray",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -21,15 +21,38 @@
       "main.js",
       "public/**/*",
       "node_modules/electron-store/**/*",
-
       "src/preload.js",
       "!**/node_modules/@tailwindcss/oxide-wasm32-wasi/**"
     ],
     "linux": {
-      "target": ["AppImage", "deb"],
+      "target": [
+        "AppImage",
+        "deb"
+      ],
       "category": "Utility",
       "icon": "public/button.png"
-    }
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "public/button.ico"
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "icon": "public/button.icns"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "seu-usuario",
+        "repo": "tasktray-app"
+      }
+    ]
   },
   "extraResources": [],
   "homepage": "https://github.com/seu-usuario/tasktray-app",
@@ -42,14 +65,14 @@
   "dependencies": {
     "@hello-pangea/dnd": "^18.0.1",
     "electron-store": "^10.1.0",
+    "electron-updater": "^6.6.2",
     "framer-motion": "^12.23.9",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.1.11",
-    "tailwindcss": "^4.1.11",
     "@eslint/js": "^9.30.1",
+    "@tailwindcss/vite": "^4.1.11",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.6.0",
@@ -61,6 +84,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
+    "tailwindcss": "^4.1.11",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.35.1",
     "vite": "^7.0.4",
