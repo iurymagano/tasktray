@@ -1,4 +1,34 @@
-# React + TypeScript + Vite
+# TaskTray
+
+TaskTray é um gerenciador de tarefas multiplataforma (Linux, Windows e Mac) desenvolvido em Electron + React. Ele roda na bandeja do sistema, é leve, rápido e suporta atualização automática via GitHub Releases.
+
+## Funcionalidades
+- Gerencie tarefas de forma simples e rápida
+- Interface moderna e responsiva
+- Sincronização local (offline)
+- Suporte a atalhos de teclado
+- Atualizações automáticas (Windows/Mac)
+- Instalação fácil para todos sistemas
+
+## Instalação
+1. Baixe o instalador mais recente para seu sistema operacional na página de [Releases](https://github.com/iurymagano/tasktray/releases).
+2. Execute o instalador e siga as instruções.
+
+## Build Manual
+Para gerar instaladores localmente:
+```sh
+npm install
+npm run build
+npm run dist
+```
+Os arquivos estarão na pasta `dist/`.
+
+## Atualizações automáticas
+O app verifica e instala atualizações automaticamente quando há uma nova versão publicada nas releases do GitHub.
+
+## Licença
+MIT
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
