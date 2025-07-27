@@ -10,6 +10,42 @@ TaskTray é um gerenciador de tarefas multiplataforma (Linux, Windows e Mac) des
 - Atualizações automáticas (Windows/Mac)
 - Instalação fácil para todos sistemas
 
+## Como baixar e rodar
+1. Acesse a página de [Releases](https://github.com/iurymagano/tasktray/releases) no GitHub.
+2. Baixe o instalador mais recente para seu sistema operacional (Windows, Linux ou Mac).
+3. Execute o instalador e siga as instruções na tela.
+4. Após instalar, o aplicativo ficará disponível na bandeja do sistema (ícone de fantasminha).
+
+## Como abrir e fechar o TaskTray
+- Pressione `Ctrl + K` para abrir ou fechar a janela do TaskTray a qualquer momento.
+- Ou clique duas vezes no ícone de fantasminha na bandeja do sistema para mostrar ou ocultar a janela.
+
+## Build Manual (para desenvolvedores)
+Para gerar instaladores localmente:
+```sh
+npm install
+npm run build
+npm run dist
+```
+Os arquivos estarão na pasta `dist/`.
+
+## Atualizações automáticas
+O app verifica e instala atualizações automaticamente quando há uma nova versão publicada nas releases do GitHub.
+
+## Licença
+MIT
+
+
+TaskTray é um gerenciador de tarefas multiplataforma (Linux, Windows e Mac) desenvolvido em Electron + React. Ele roda na bandeja do sistema, é leve, rápido e suporta atualização automática via GitHub Releases.
+
+## Funcionalidades
+- Gerencie tarefas de forma simples e rápida
+- Interface moderna e responsiva
+- Sincronização local (offline)
+- Suporte a atalhos de teclado
+- Atualizações automáticas (Windows/Mac)
+- Instalação fácil para todos sistemas
+
 ## Instalação
 1. Baixe o instalador mais recente para seu sistema operacional na página de [Releases](https://github.com/iurymagano/tasktray/releases).
 2. Execute o instalador e siga as instruções.
