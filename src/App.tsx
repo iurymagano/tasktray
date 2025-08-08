@@ -28,6 +28,8 @@ export default function App() {
 
   // Salva edição inline da tarefa
   function saveEdit() {
+    console.log('adicionado um console 2');
+
     if (editingId && editingText.trim()) {
       setTasks(
         tasks.map((t) =>
