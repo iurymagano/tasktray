@@ -40,6 +40,7 @@ export default function App() {
 
   // Cancela edição inline da tarefa
   function cancelEdit() {
+    console.log('adicionado um console');
     setEditingId(null);
   }
 
