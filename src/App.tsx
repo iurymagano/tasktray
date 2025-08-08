@@ -42,6 +42,8 @@ export default function App() {
 
   // Cancela edição inline da tarefa
   function cancelEdit() {
+    console.log('adicionado um console 4');
+
     console.log('adicionado um console 3');
 
     console.log('adicionado um console');
